@@ -1,8 +1,8 @@
-FROM n8nio/n8n:latest
+FROM n8nio/n8n:1.108.2
 
 USER root
 
-# 在 Alpine 裡用 apk 安裝 ffmpeg
+# Alpine Linux 安裝 ffmpeg
 RUN apk update && apk add --no-cache ffmpeg
 
 USER node
